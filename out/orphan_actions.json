@@ -1,0 +1,20 @@
+[
+  {
+    "orphan": "/guides/how-to-redeem-a-steam-key.html",
+    "suggested_source": "/index.html",
+    "suggested_anchor": "redeem steam key",
+    "reason": "no page mentions this page's keywords, so no anchor exists to link from; add one deliberately"
+  },
+  {
+    "orphan": "/guides/ps5-region-locking-explained.html",
+    "suggested_source": "/index.html",
+    "suggested_anchor": "ps5 region lock",
+    "reason": "no page mentions this page's keywords, so no anchor exists to link from; add one deliberately"
+  },
+  {
+    "orphan": "/guides/xbox-key-activation-regions.html",
+    "suggested_source": "/index.html",
+    "suggested_anchor": "xbox key regions",
+    "reason": "no page mentions this page's keywords, so no anchor exists to link from; add one deliberately"
+  }
+]

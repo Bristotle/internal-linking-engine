@@ -1,0 +1,241 @@
+{
+  "nodes": [
+    {
+      "url": "/games/cyberpunk-2077-pc-global.html",
+      "title": "Cyberpunk 2077 PC Global Key",
+      "type": "product",
+      "inlinks_before": 2,
+      "pagerank_before": 0.091674,
+      "pagerank_after": 0.152181,
+      "pagerank_change_pct": 66.0
+    },
+    {
+      "url": "/games/ea-sports-fc-24-ps5-eu.html",
+      "title": "EA SPORTS FC 24 PS5 EU Key",
+      "type": "product",
+      "inlinks_before": 1,
+      "pagerank_before": 0.05713,
+      "pagerank_after": 0.052483,
+      "pagerank_change_pct": -8.1
+    },
+    {
+      "url": "/games/elden-ring-ps5-eu.html",
+      "title": "Elden Ring PS5 EU Key",
+      "type": "product",
+      "inlinks_before": 1,
+      "pagerank_before": 0.064333,
+      "pagerank_after": 0.133116,
+      "pagerank_change_pct": 106.9
+    },
+    {
+      "url": "/games/minecraft-java-bedrock-pc-global.html",
+      "title": "Minecraft Java and Bedrock PC Global Key",
+      "type": "product",
+      "inlinks_before": 1,
+      "pagerank_before": 0.08944,
+      "pagerank_after": 0.052483,
+      "pagerank_change_pct": -41.3
+    },
+    {
+      "url": "/games/witcher-3-wild-hunt-xbox-us.html",
+      "title": "The Witcher 3 Wild Hunt Xbox US Key",
+      "type": "product",
+      "inlinks_before": 1,
+      "pagerank_before": 0.064333,
+      "pagerank_after": 0.137256,
+      "pagerank_change_pct": 113.4
+    },
+    {
+      "url": "/genres/rpg.html",
+      "title": "RPG Games",
+      "type": "hub",
+      "inlinks_before": 3,
+      "pagerank_before": 0.176632,
+      "pagerank_after": 0.15669,
+      "pagerank_change_pct": -11.3
+    },
+    {
+      "url": "/genres/sandbox.html",
+      "title": "Sandbox Games",
+      "type": "hub",
+      "inlinks_before": 2,
+      "pagerank_before": 0.147392,
+      "pagerank_after": 0.081577,
+      "pagerank_change_pct": -44.7
+    },
+    {
+      "url": "/genres/sports.html",
+      "title": "Sports Games",
+      "type": "hub",
+      "inlinks_before": 1,
+      "pagerank_before": 0.071368,
+      "pagerank_after": 0.081577,
+      "pagerank_change_pct": 14.3
+    },
+    {
+      "url": "/guides/how-to-redeem-a-steam-key.html",
+      "title": "How to redeem a Steam key",
+      "type": "guide",
+      "inlinks_before": 0,
+      "pagerank_before": 0.026798,
+      "pagerank_after": 0.0125,
+      "pagerank_change_pct": -53.4
+    },
+    {
+      "url": "/guides/ps5-region-locking-explained.html",
+      "title": "PS5 region locking explained",
+      "type": "guide",
+      "inlinks_before": 0,
+      "pagerank_before": 0.026798,
+      "pagerank_after": 0.0125,
+      "pagerank_change_pct": -53.4
+    },
+    {
+      "url": "/guides/xbox-key-activation-regions.html",
+      "title": "Xbox key activation regions",
+      "type": "guide",
+      "inlinks_before": 0,
+      "pagerank_before": 0.026798,
+      "pagerank_after": 0.0125,
+      "pagerank_change_pct": -53.4
+    },
+    {
+      "url": "/index.html",
+      "title": "Game Key Marketplace",
+      "type": "home",
+      "inlinks_before": 3,
+      "pagerank_before": 0.157305,
+      "pagerank_after": 0.115137,
+      "pagerank_change_pct": -26.8
+    }
+  ],
+  "edges_existing": [
+    {
+      "source": "/games/cyberpunk-2077-pc-global.html",
+      "target": "/genres/rpg.html"
+    },
+    {
+      "source": "/games/elden-ring-ps5-eu.html",
+      "target": "/games/cyberpunk-2077-pc-global.html"
+    },
+    {
+      "source": "/games/elden-ring-ps5-eu.html",
+      "target": "/genres/rpg.html"
+    },
+    {
+      "source": "/games/minecraft-java-bedrock-pc-global.html",
+      "target": "/genres/sandbox.html"
+    },
+    {
+      "source": "/genres/rpg.html",
+      "target": "/games/cyberpunk-2077-pc-global.html"
+    },
+    {
+      "source": "/genres/rpg.html",
+      "target": "/games/elden-ring-ps5-eu.html"
+    },
+    {
+      "source": "/genres/rpg.html",
+      "target": "/games/witcher-3-wild-hunt-xbox-us.html"
+    },
+    {
+      "source": "/genres/rpg.html",
+      "target": "/index.html"
+    },
+    {
+      "source": "/genres/sandbox.html",
+      "target": "/games/minecraft-java-bedrock-pc-global.html"
+    },
+    {
+      "source": "/genres/sandbox.html",
+      "target": "/index.html"
+    },
+    {
+      "source": "/genres/sports.html",
+      "target": "/games/ea-sports-fc-24-ps5-eu.html"
+    },
+    {
+      "source": "/genres/sports.html",
+      "target": "/index.html"
+    },
+    {
+      "source": "/index.html",
+      "target": "/genres/rpg.html"
+    },
+    {
+      "source": "/index.html",
+      "target": "/genres/sandbox.html"
+    },
+    {
+      "source": "/index.html",
+      "target": "/genres/sports.html"
+    }
+  ],
+  "edges_proposed": [
+    {
+      "source": "/games/cyberpunk-2077-pc-global.html",
+      "target": "/games/witcher-3-wild-hunt-xbox-us.html",
+      "anchor": "witcher 3 xbox key"
+    },
+    {
+      "source": "/games/elden-ring-ps5-eu.html",
+      "target": "/games/witcher-3-wild-hunt-xbox-us.html",
+      "anchor": "witcher 3 xbox key"
+    },
+    {
+      "source": "/games/witcher-3-wild-hunt-xbox-us.html",
+      "target": "/games/elden-ring-ps5-eu.html",
+      "anchor": "elden ring ps5 key"
+    },
+    {
+      "source": "/games/cyberpunk-2077-pc-global.html",
+      "target": "/games/elden-ring-ps5-eu.html",
+      "anchor": "elden ring ps5 key"
+    },
+    {
+      "source": "/guides/how-to-redeem-a-steam-key.html",
+      "target": "/games/minecraft-java-bedrock-pc-global.html",
+      "anchor": "minecraft java bedrock key"
+    },
+    {
+      "source": "/guides/ps5-region-locking-explained.html",
+      "target": "/games/ea-sports-fc-24-ps5-eu.html",
+      "anchor": "ea sports fc 24 ps5 key"
+    },
+    {
+      "source": "/guides/ps5-region-locking-explained.html",
+      "target": "/games/elden-ring-ps5-eu.html",
+      "anchor": "elden ring ps5 key"
+    },
+    {
+      "source": "/guides/xbox-key-activation-regions.html",
+      "target": "/games/witcher-3-wild-hunt-xbox-us.html",
+      "anchor": "witcher 3 xbox key"
+    },
+    {
+      "source": "/games/ea-sports-fc-24-ps5-eu.html",
+      "target": "/genres/sports.html",
+      "anchor": "sports games"
+    },
+    {
+      "source": "/games/witcher-3-wild-hunt-xbox-us.html",
+      "target": "/games/cyberpunk-2077-pc-global.html",
+      "anchor": "cyberpunk 2077 pc key"
+    },
+    {
+      "source": "/index.html",
+      "target": "/games/cyberpunk-2077-pc-global.html",
+      "anchor": "cyberpunk 2077 pc key"
+    },
+    {
+      "source": "/guides/how-to-redeem-a-steam-key.html",
+      "target": "/games/cyberpunk-2077-pc-global.html",
+      "anchor": "cyberpunk 2077 pc key"
+    },
+    {
+      "source": "/games/witcher-3-wild-hunt-xbox-us.html",
+      "target": "/genres/rpg.html",
+      "anchor": "rpg games"
+    }
+  ]
+}

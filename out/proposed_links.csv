@@ -1,0 +1,14 @@
+source,target,anchor,priority,target_inlinks_before
+"/games/cyberpunk-2077-pc-global.html","/games/witcher-3-wild-hunt-xbox-us.html","witcher 3 xbox key",1.2,1
+"/games/elden-ring-ps5-eu.html","/games/witcher-3-wild-hunt-xbox-us.html","witcher 3 xbox key",1.2,1
+"/games/witcher-3-wild-hunt-xbox-us.html","/games/elden-ring-ps5-eu.html","elden ring ps5 key",1.2,1
+"/games/cyberpunk-2077-pc-global.html","/games/elden-ring-ps5-eu.html","elden ring ps5 key",1.05,1
+"/guides/how-to-redeem-a-steam-key.html","/games/minecraft-java-bedrock-pc-global.html","minecraft java bedrock key",1.0,1
+"/guides/ps5-region-locking-explained.html","/games/ea-sports-fc-24-ps5-eu.html","ea sports fc 24 ps5 key",1.0,1
+"/guides/ps5-region-locking-explained.html","/games/elden-ring-ps5-eu.html","elden ring ps5 key",1.0,1
+"/guides/xbox-key-activation-regions.html","/games/witcher-3-wild-hunt-xbox-us.html","witcher 3 xbox key",1.0,1
+"/games/ea-sports-fc-24-ps5-eu.html","/genres/sports.html","sports games",0.95,1
+"/games/witcher-3-wild-hunt-xbox-us.html","/games/cyberpunk-2077-pc-global.html","cyberpunk 2077 pc key",0.6,2
+"/index.html","/games/cyberpunk-2077-pc-global.html","cyberpunk 2077 pc key",0.4,2
+"/guides/how-to-redeem-a-steam-key.html","/games/cyberpunk-2077-pc-global.html","cyberpunk 2077 pc key",0.4,2
+"/games/witcher-3-wild-hunt-xbox-us.html","/genres/rpg.html","rpg games",0.35,3
