@@ -7,15 +7,6 @@ one page mentions another page's target keyword and does not link to it.
 
 **Live output:** https://bristotle.github.io/internal-linking-engine/
 
-Third in a series of SEO automation tools built around a game marketplace use
-case, after [eneba-01-programmatic-seo](https://github.com/Bristotle/eneba-01-programmatic-seo)
-(generate the pages) and [crawl-redirect-mapper](https://github.com/Bristotle/crawl-redirect-mapper)
-(migrate the old site onto them).
-
-[llm-metadata-qa-pipeline](https://github.com/Bristotle/llm-metadata-qa-pipeline)
-closes the set: it writes the metadata those pages render, with quality gates
-between the model and anything that publishes.
-
 ## The problem it solves
 
 Programmatic SEO produces pages faster than anyone links to them. A generator
@@ -101,3 +92,14 @@ The two most under linked product pages gain the most. Witcher 3 gains 113
 percent internal PageRank and Elden Ring 107 percent, funded largely by the RPG
 hub's share falling 11 percent. That redistribution is the point. Hub pages
 accumulate rank by default and have the least need for it.
+
+## The series
+
+Seven tools around one game-marketplace use case. All Python 3, all running on the standard library alone, each with its own test suite and CI.
+
+- **[eneba-01-programmatic-seo](https://github.com/Bristotle/eneba-01-programmatic-seo)** generates the pages from a product feed, with structured data and a sitemap.
+- **[crawl-redirect-mapper](https://github.com/Bristotle/crawl-redirect-mapper)** migrates a legacy site onto them with a confidence-tiered redirect map.
+- **[llm-metadata-qa-pipeline](https://github.com/Bristotle/llm-metadata-qa-pipeline)** writes the metadata those pages render, gated against the feed.
+- **[search-data-pipeline](https://github.com/Bristotle/search-data-pipeline)** models Search Console, GA4 and DataForSEO into a backlog ranked by revenue.
+- **[hreflang-auditor](https://github.com/Bristotle/hreflang-auditor)** audits multi-market hreflang by cluster.
+- **[ai-visibility-tracker](https://github.com/Bristotle/ai-visibility-tracker)** tracks how often the brand is named and cited in LLM answers.
