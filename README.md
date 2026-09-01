@@ -10,6 +10,10 @@ case, after [eneba-01-programmatic-seo](https://github.com/Bristotle/eneba-01-pr
 (generate the pages) and [crawl-redirect-mapper](https://github.com/Bristotle/crawl-redirect-mapper)
 (migrate the old site onto them).
 
+[llm-metadata-qa-pipeline](https://github.com/Bristotle/llm-metadata-qa-pipeline)
+closes the set: it writes the metadata those pages render, with quality gates
+between the model and anything that publishes.
+
 ## The problem it solves
 
 Programmatic SEO produces pages faster than anyone links to them. A generator
