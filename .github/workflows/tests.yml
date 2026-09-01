@@ -1,0 +1,50 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.9 is the floor the code actually targets. Testing the newest
+        # release too catches deprecations before they become breakage.
+        python-version: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run the test suite
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Run the pipeline end to end
+        run: |
+          python3 link_engine.py
+          python3 publish.py
+
+      - name: Committed output is in sync with the code
+        # The generated files are committed so results are browsable without
+        # cloning. If a change to the code would alter them, the commit that
+        # made it should have included them.
+        run: |
+          git diff --exit-code -- . ':(exclude)*.db' \
+            || (echo "::error::Generated output is stale. Re-run the pipeline and commit the result." && exit 1)
+
+      - name: House style, no en dashes or em dashes in published copy
+        # Scoped to what a reader sees. Source that matches on a dash, and
+        # fixtures that deliberately contain one, are not style violations.
+        run: |
+          if grep -rlP '[\x{2013}\x{2014}]' README.md docs out \
+               --include='*.md' --include='*.html' 2>/dev/null | grep -q .; then
+            echo "::error::An en dash or em dash reached published copy."
+            grep -rlP '[\x{2013}\x{2014}]' README.md docs out --include='*.md' --include='*.html'
+            exit 1
+          fi

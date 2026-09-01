@@ -1,0 +1,23 @@
+# Mirrors .github/workflows/tests.yml so the same checks run on either host.
+stages:
+  - test
+
+default:
+  image: python:3.12-slim
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq git >/dev/null
+
+tests:
+  stage: test
+  parallel:
+    matrix:
+      - PYTHON_IMAGE: ["python:3.9-slim", "python:3.12-slim"]
+  image: $PYTHON_IMAGE
+  script:
+    - python3 -m unittest discover -s tests -v
+    - python3 link_engine.py
+    - python3 publish.py
+    - git diff --exit-code -- . ':(exclude)*.db'
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

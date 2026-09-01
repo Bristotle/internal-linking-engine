@@ -3,6 +3,8 @@
 Finds the internal links a site should already have, by looking for places where
 one page mentions another page's target keyword and does not link to it.
 
+[![tests](https://github.com/Bristotle/internal-linking-engine/actions/workflows/tests.yml/badge.svg)](https://github.com/Bristotle/internal-linking-engine/actions/workflows/tests.yml)
+
 **Live output:** https://bristotle.github.io/internal-linking-engine/
 
 Third in a series of SEO automation tools built around a game marketplace use
