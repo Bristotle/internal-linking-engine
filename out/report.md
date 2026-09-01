@@ -9,9 +9,9 @@
 
 ## Orphan pages before this pass
 
-- `/guides/how-to-redeem-a-steam-key.html` (guide) -- still orphaned
-- `/guides/ps5-region-locking-explained.html` (guide) -- still orphaned
-- `/guides/xbox-key-activation-regions.html` (guide) -- still orphaned
+- `/guides/how-to-redeem-a-steam-key.html` (guide): still orphaned
+- `/guides/ps5-region-locking-explained.html` (guide): still orphaned
+- `/guides/xbox-key-activation-regions.html` (guide): still orphaned
 
 ## Largest PageRank gains
 

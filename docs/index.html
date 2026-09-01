@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Internal linking engine</title>
+<meta name="description" content="Finds the internal links a site should already have, by looking for places where one page mentions another page&#x27;s target keyword and does not link to it.">
+<style>
+:root {
+  --bg: #ffffff; --panel: #f7f5fb; --ink: #1A1033; --muted: #5c5470;
+  --line: #e3ddf0; --accent: #6B2FD9; --accent-soft: #f0e9fd;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14101f; --panel: #1c1730; --ink: #ede9f7; --muted: #a79fc0;
+    --line: #2e2745; --accent: #8B52E8; --accent-soft: #241d3c;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 24px 80px; }
+header { border-bottom: 1px solid var(--line); margin-bottom: 40px; padding: 56px 0 32px; }
+.eyebrow {
+  color: var(--accent); font-size: 12px; font-weight: 600;
+  letter-spacing: .09em; text-transform: uppercase; margin: 0 0 12px;
+}
+h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; margin: 0 0 12px; letter-spacing: -.02em; }
+.tagline { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 60ch; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.btn {
+  display: inline-block; padding: 9px 16px; border-radius: 8px; font-size: 14px;
+  font-weight: 600; text-decoration: none; background: var(--accent); color: #fff;
+}
+.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+h2 {
+  font-size: 13px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--muted); margin: 44px 0 14px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 18px; margin: 28px 0 10px; }
+p { margin: 0 0 16px; max-width: 68ch; }
+ul { margin: 0 0 16px; padding-left: 20px; max-width: 68ch; }
+li { margin-bottom: 8px; }
+code {
+  background: var(--accent-soft); color: var(--accent); padding: 2px 6px;
+  border-radius: 4px; font-size: 13px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.scroll { overflow-x: auto; margin: 0 0 20px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 460px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+th {
+  font-size: 11px; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600; background: var(--panel);
+}
+tbody tr:last-child td { border-bottom: none; }
+td code { font-size: 12px; }
+footer {
+  margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 14px;
+}
+footer code { font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="eyebrow">SEO automation</p>
+  <h1>Internal linking engine</h1>
+  <p class="tagline">Finds the internal links a site should already have, by looking for places where one page mentions another page&#x27;s target keyword and does not link to it.</p>
+  <div class="actions">
+    <a class="btn" href="https://github.com/Bristotle/internal-linking-engine">View the source</a>
+    <a class="btn ghost" href="https://github.com/Bristotle/internal-linking-engine#readme">How it works</a>
+  </div>
+</header>
+<main>
+<div class="scroll"><table><thead><tr><th></th><th>Before</th><th>After</th></tr></thead><tbody><tr><td>Internal links</td><td>15</td><td>28</td></tr><tr><td>Orphan pages</td><td>3</td><td>3</td></tr></tbody></table></div>
+<p>13 proposals accepted, 0 held back by the per-page and per-target caps.</p>
+<h2>Orphan pages before this pass</h2>
+<ul><li><code>/guides/how-to-redeem-a-steam-key.html</code> (guide): still orphaned</li><li><code>/guides/ps5-region-locking-explained.html</code> (guide): still orphaned</li><li><code>/guides/xbox-key-activation-regions.html</code> (guide): still orphaned</li></ul>
+<h2>Largest PageRank gains</h2>
+<div class="scroll"><table><thead><tr><th>Page</th><th>Before</th><th>After</th><th>Change</th></tr></thead><tbody><tr><td><code>/games/witcher-3-wild-hunt-xbox-us.html</code></td><td>0.0643</td><td>0.1373</td><td>+113.4%</td></tr><tr><td><code>/games/elden-ring-ps5-eu.html</code></td><td>0.0643</td><td>0.1331</td><td>+106.9%</td></tr><tr><td><code>/games/cyberpunk-2077-pc-global.html</code></td><td>0.0917</td><td>0.1522</td><td>+66.0%</td></tr><tr><td><code>/genres/sports.html</code></td><td>0.0714</td><td>0.0816</td><td>+14.3%</td></tr><tr><td><code>/games/ea-sports-fc-24-ps5-eu.html</code></td><td>0.0571</td><td>0.0525</td><td>-8.1%</td></tr><tr><td><code>/genres/rpg.html</code></td><td>0.1766</td><td>0.1567</td><td>-11.3%</td></tr></tbody></table></div>
+<h2>Proposed links</h2>
+<div class="scroll"><table><thead><tr><th>Source</th><th>Anchor</th><th>Target</th><th>Priority</th></tr></thead><tbody><tr><td><code>/games/cyberpunk-2077-pc-global.html</code></td><td>witcher 3 xbox key</td><td><code>/games/witcher-3-wild-hunt-xbox-us.html</code></td><td>1.20</td></tr><tr><td><code>/games/elden-ring-ps5-eu.html</code></td><td>witcher 3 xbox key</td><td><code>/games/witcher-3-wild-hunt-xbox-us.html</code></td><td>1.20</td></tr><tr><td><code>/games/witcher-3-wild-hunt-xbox-us.html</code></td><td>elden ring ps5 key</td><td><code>/games/elden-ring-ps5-eu.html</code></td><td>1.20</td></tr><tr><td><code>/games/cyberpunk-2077-pc-global.html</code></td><td>elden ring ps5 key</td><td><code>/games/elden-ring-ps5-eu.html</code></td><td>1.05</td></tr><tr><td><code>/guides/how-to-redeem-a-steam-key.html</code></td><td>minecraft java bedrock key</td><td><code>/games/minecraft-java-bedrock-pc-global.html</code></td><td>1.00</td></tr><tr><td><code>/guides/ps5-region-locking-explained.html</code></td><td>ea sports fc 24 ps5 key</td><td><code>/games/ea-sports-fc-24-ps5-eu.html</code></td><td>1.00</td></tr><tr><td><code>/guides/ps5-region-locking-explained.html</code></td><td>elden ring ps5 key</td><td><code>/games/elden-ring-ps5-eu.html</code></td><td>1.00</td></tr><tr><td><code>/guides/xbox-key-activation-regions.html</code></td><td>witcher 3 xbox key</td><td><code>/games/witcher-3-wild-hunt-xbox-us.html</code></td><td>1.00</td></tr><tr><td><code>/games/ea-sports-fc-24-ps5-eu.html</code></td><td>sports games</td><td><code>/genres/sports.html</code></td><td>0.95</td></tr><tr><td><code>/games/witcher-3-wild-hunt-xbox-us.html</code></td><td>cyberpunk 2077 pc key</td><td><code>/games/cyberpunk-2077-pc-global.html</code></td><td>0.60</td></tr><tr><td><code>/index.html</code></td><td>cyberpunk 2077 pc key</td><td><code>/games/cyberpunk-2077-pc-global.html</code></td><td>0.40</td></tr><tr><td><code>/guides/how-to-redeem-a-steam-key.html</code></td><td>cyberpunk 2077 pc key</td><td><code>/games/cyberpunk-2077-pc-global.html</code></td><td>0.40</td></tr><tr><td><code>/games/witcher-3-wild-hunt-xbox-us.html</code></td><td>rpg games</td><td><code>/genres/rpg.html</code></td><td>0.35</td></tr></tbody></table></div>
+<h2>Orphans needing a copy change</h2>
+<p>These cannot be fixed from existing text. Nothing on the site mentions their keywords, so there is no anchor to attach a link to. Each needs a link added deliberately, from the page that owns the topic.</p>
+<div class="scroll"><table><thead><tr><th>Orphan</th><th>Add a link from</th><th>Suggested anchor</th></tr></thead><tbody><tr><td><code>/guides/how-to-redeem-a-steam-key.html</code></td><td><code>/index.html</code></td><td>redeem steam key</td></tr><tr><td><code>/guides/ps5-region-locking-explained.html</code></td><td><code>/index.html</code></td><td>ps5 region lock</td></tr><tr><td><code>/guides/xbox-key-activation-regions.html</code></td><td><code>/index.html</code></td><td>xbox key regions</td></tr></tbody></table></div>
+</main>
+<footer>
+  <p>This page is generated from the tool's own output. Reproduce it with
+  <code>python3 link_engine.py</code> in the repository, then <code>python3 publish.py</code>.</p>
+</footer>
+</div>
+</body>
+</html>

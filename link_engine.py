@@ -301,7 +301,7 @@ def write_outputs(pages, accepted, rejected, outlinks, inlinks, before, after, o
     if orphans_before:
         for url in sorted(orphans_before):
             status = "resolved" if url in gained else "still orphaned"
-            report.append("- `%s` (%s) -- %s" % (url, by_url[url]["type"], status))
+            report.append("- `%s` (%s): %s" % (url, by_url[url]["type"], status))
     else:
         report.append("None.")
 
@@ -335,7 +335,7 @@ def write_outputs(pages, accepted, rejected, outlinks, inlinks, before, after, o
     if rejected:
         report += ["", "## Held back by caps", ""]
         for o in rejected:
-            report.append("- `%s` -> `%s` (%s) -- %s" % (
+            report.append("- `%s` to `%s` (%s). %s" % (
                 o["source"], o["target"], o["anchor"], o["rejected_because"]))
 
     (output_dir / "report.md").write_text("\n".join(report) + "\n")
